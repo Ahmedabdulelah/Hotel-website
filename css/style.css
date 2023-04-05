@@ -5,9 +5,11 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     color: #777777;
+    overflow-x: hidden;
 }
+/* problem in navbar */
 .container{
-    width: 80%;
+    width: 1000px;
 }
 /* Start header */
 .header{
@@ -70,10 +72,6 @@ body{
     font-weight: 600;
     background: #f3c300;
     padding: 10px 30px;
-    transition: all .3s linear;
-}
-.content a:hover{
-    background-color: #c59b04;
 }
 .book{
     position: absolute;
@@ -92,11 +90,148 @@ body{
     text-transform: uppercase;
 }
 .form-group{
-    padding-top: 7px;
+    padding-top: 15px;
+    position: relative;
+}
+.hvr-sweep-to-right::before{
+    background-color: #a88210;
+}
+.dateinput{
+    background-color: transparent;
+    border-radius: none;
+    border: 1px solid #2b3146;
+    height: 42px;
+}
+.databook{
+    position: relative;
+}
+.icon-calender{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.nice-select{
+    width: 100%;
+    margin-bottom:10px;
+    background-color: transparent;
+    border: 1px solid #2b3146;
+    border-radius: 0;
+}
+.list{
+    width: 100%;
+}
+.book-now{
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    background: #f3c300;
+    padding: 10px 56px;
 }
 
-
-
-
-
 /* End header */
+
+
+
+
+/* Start Hotel Accomodation */
+.Hotel-Accomodation{
+    margin: 150px;
+}
+.Hotel-content h1{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+    color: #222222;
+}
+.Hotel-content p{
+    font-size: 14px;
+    line-height: 30px;
+    color: #777777
+}
+.hotel-description{
+    position: relative;
+    overflow: hidden;
+    /* text-align: center; */
+}
+.hotel-description .Booking{
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    background: #f3c300;
+    padding: 10px 20px;
+}
+.dec{
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 600;
+    color: #222222;
+    text-decoration: none;
+    padding-left: 30px;
+}
+.price-room{
+    font-size: 24px;
+    line-height: 28px;
+    color: #52c5fd;
+    font-weight: 600
+}
+.room-img{
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+.room-img:hover{
+    transform: scale(1.1);
+}
+/* End Hotel Accomodation */
+
+
+
+/* Start Facilities */
+.Facilities{
+    background-image: url('/img/facilites_bg.jpg.webp');
+    background-size: cover;
+    height: 700px;
+    position: relative;
+}
+.overlay-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 8, 30, 0.8);
+}
+.Facilities-content h2{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+    color: white;
+}
+.Facilities-content{
+    font-size: 14px;
+    line-height: 30px;
+    color: #777777;
+}
+.Facilities-box{
+    border: 1px solid #777777;
+    border-radius: 10px;
+    background-color: rgba(249, 249, 255, 0.102);
+    padding: 31px 40px 37px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.Facilities-box h4 i{
+    color: #f3c300;
+    font-size: 24px;
+    line-height: 38px;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-right: 20px;
+}
+/* End Facilities */
